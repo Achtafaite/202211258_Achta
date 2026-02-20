@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation */
+nav {
+    background-color: #222;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+/* Title */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    letter-spacing: 3px;
+}
+
+/* Top Section */
+.top-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    width: 28%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Image Placeholder */
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Income Section */
+.income {
+    padding: 40px;
+    text-align: center;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #222;
+    color: white;
+}
