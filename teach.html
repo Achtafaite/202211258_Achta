@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teach</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        background-image: url("image48.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .page-title {
+        position: absolute;
+        top: 18px;
+        left: 22px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #222;
+        padding: 2px 8px;
+        border-radius: 2px;
+      }
+
+      .wrapper {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.88);
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 30px 36px 36px;
+        width: 320px;
+      }
+
+      .form-group {
+        margin-bottom: 22px;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 14px;
+        color: #222;
+        margin-bottom: 8px;
+      }
+
+      .form-group input[type="text"],
+      .form-group input[type="email"],
+      .form-group textarea {
+        width: 100%;
+        padding: 8px 10px;
+        border: none;
+        border-bottom: 1px solid #999;
+        background: transparent;
+        font-size: 14px;
+        outline: none;
+        font-family: Arial;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border-bottom: 1px solid #333;
+      }
+
+      .form-group textarea {
+        resize: none;
+        border: 1px solid #bbb;
+        border-radius: 2px;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      fieldset {
+        border: 1px solid #999;
+        border-radius: 2px;
+        padding: 10px 14px;
+        margin-bottom: 22px;
+      }
+
+      legend {
+        font-size: 13px;
+        color: #222;
+        padding: 0 4px;
+      }
+
+      .radio-group {
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .radio-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 12px;
+        border: 1px solid #bbb;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.5);
+      }
+
+      .radio-item label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        color: #222;
+        margin-bottom: 0;
+        margin-top: 6px;
+      }
+
+      .radio-group input[type="radio"] {
+        width: 14px;
+        height: 14px;
+      }
+
+      .desc-label {
+        font-size: 13px;
+        color: #444;
+        margin-bottom: 6px;
+        display: block;
+      }
+
+      input[type="file"] {
+        font-size: 13px;
+        margin-bottom: 22px;
+      }
+
+      .btn-submit {
+        background: #e53e00;
+        color: #fff;
+        border: none;
+        padding: 10px 22px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-top: 8px;
+      }
+
+      .btn-submit:hover {
+        background: #c73500;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="page-title">Teach</span>
+
+    <div class="wrapper">
+      <div class="card">
+        <div class="form-group">
+          <label>Subject To Teach:</label>
+          <input type="text" name="subject" />
+        </div>
+
+        <fieldset>
+          <legend>Preferred Teaching Mode:</legend>
+          <div class="radio-group">
+            <div class="radio-item">
+              <input type="radio" name="mode" value="online" id="online" />
+              <label for="online">Online</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" name="mode" value="inperson" id="inperson" />
+              <label for="inperson">In-Person</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label>Brief Description of yourself</label>
+          <textarea
+            rows="3"
+            name="intro"
+            placeholder="Introduce yourself"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="file" name="cv" />
+        </div>
+
+        <button class="btn-submit">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
