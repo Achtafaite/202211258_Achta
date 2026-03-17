@@ -1,1 +1,24 @@
-# Full PHP REST API Implementation Plan\n\n## Steps Completed ✓\n1. ✅ Create `users.json` with initial data.\n2. ✅ Implement full CRUD in `API.php` (load/save from JSON, GET all/?id=N, POST create auto-ID, PUT full update, PATCH partial, DELETE by ID, validation, errors, CORS).\n\n## Remaining Steps\n3. Test with curl.\n4. Run server: `php -S localhost:8000`.\n\nAll files generated: API.php (main), users.json (data), TODO.md (this).
+# TODO: Python Project Tasks
+
+## Previous Tasks:
+
+## Calculator:
+
+- [x] Create `Simple_calculator.py`
+- [x] Create `operators.py` and refactor
+- [x] Test calculator
+
+## Student Grade Checker:
+
+- [x] Create `Student_grade_checker.py`
+- [x] Test and complete
+
+## New Task: Quiz Application
+
+- [x] Step 1: Create `quiz_app.py` with multiple choice questions.
+- [x] Step 2: Implement user input for answers (a/b/c/d).
+- [x] Step 3: Score out of 100, show correct answers at end.
+- [x] Step 4: Test the quiz.
+- [x] Step 5: Update TODO.md.
+
+## Status: ✅ Complete
